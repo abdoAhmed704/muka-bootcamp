@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+
+    <header>
+        <h1>Abdelrahman Ahmed</h1>
+        <nav>
+            <ul>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="aboutme">
+        <h2>About Me</h2>
+        <p>I am a software developer, i study electronic engineering, but i like software alot</p>
+        <img src="flexing.jpg" alt="My photo" width="300" height="300">
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ol>
+            <li>
+                <h3>Chess game project</h3>
+                <p>me with my partner have made a simple clone to the Chess.com website</p>
+                <a href="https://github.com/mohamed-afifi1/chess_website/">GitHub Link</a>
+                <figure>
+                    <img src="chess.png" alt="chess" width="500" height="300">
+                </figure>
+            </li>
+        </ol>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <table>
+            <tr>
+                <th>Skill</th>
+                <th>Level</th>
+                <th>Experience</th>
+            </tr>
+            <tr>
+                <td>C++</td>
+                <td>Expert</td>
+                <td>1 Year</td>
+            </tr>
+            <tr>
+                <td>Js</td>
+                <td>beginner</td>
+                <td>5 months</td>
+            </tr>
+            <tr>
+                <td>python</td>
+                <td>Intermediate</td>
+                <td>1 year</td>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Intermediate</td>
+                <td>1 year</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="/submit" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Abdelrahman. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
