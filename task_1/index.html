@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Portfolio</title>
 </head>
 <body>
@@ -69,11 +70,16 @@
                 <td>1 year</td>
             </tr>
         </table>
+
+        <!-- Example skill bars (added) -->
+        <div class="skill-bar" data-proficiency="80">C++ Proficiency</div>
+        <div class="skill-bar" data-proficiency="60">Python Proficiency</div>
+        <div class="skill-bar" data-proficiency="40">JavaScript Proficiency</div>
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
-        <form action="/submit" method="POST">
+        <form id="contact-form" action="/submit" method="POST">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name">
             <br>
@@ -86,6 +92,29 @@
             <input type="submit" value="Submit">
         </form>
     </section>
+
+    <!-- Dark mode toggle button (added) -->
+    <button id="theme-toggle">Toggle Dark Mode</button>
+
+    <!-- Modal for project previews (added) -->
+    <div id="project-modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Project Preview</p>
+        </div>
+    </div>
+
+    <!-- Carousel for project images (added) -->
+    <div class="carousel">
+        <img src="image1.jpg" class="active" />
+        <img src="image2.jpg" />
+        <img src="image3.jpg" />
+        <button class="prev">Previous</button>
+        <button class="next">Next</button>
+    </div>
+
+    <!-- Scroll-to-Top Button (added) -->
+    <button id="scroll-to-top" style="display:none;">Top</button>
 
     <footer>
         <p>&copy; 2024 Abdelrahman. All rights reserved.</p>
